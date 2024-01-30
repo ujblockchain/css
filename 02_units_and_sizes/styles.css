@@ -1,0 +1,74 @@
+/* UNITS AND SIZES */
+
+/* 1. Absolute Units
+        These units of measurement that do not change based on the size of the viewport or the font size of the element. examples are:
+            - px (pixels) = one dot of the a computer screen. Most common
+            - pt (points)
+            - cm (centimeters)
+            - mm (millimeters)
+            - in (inches)
+            - pc (picas)
+*/
+
+/* Pixels */
+body {
+  font-size: 16px;
+}
+
+.my-element {
+  width: 200px;
+}
+
+/* Points - pt = used in print design 1pt = 1/72 inch */
+body {
+  font-size: 16pt;
+}
+
+/* Inches - in = less common. 1 inch = 96 pixels */
+body {
+  font-size: 0.25in;
+}
+.my-element {
+  width: 2in;
+}
+
+/* 1. Relative Units
+        units of measurement that are based on the size of the parent element or the root element. Useful for creating flexible and responsive design. Examples are:
+           * em: relative to the font size of the parent element 
+           * rem: relative to the root element
+           * %: relative to the parent element
+           * vh and vw: relative to the screen size
+*/
+
+/* em =  based on the font size of the parent element. One em is equal to the font size of the parent element */
+body {
+  font-size: 1.2em;
+}
+
+/* Set the width of an element to 20 ems */
+.my-element {
+  width: 20em;
+}
+
+/* rem: based on the font size of the root element (i.e. the <html> element). One rem is equal to the font size of the root element.  */
+body {
+  font-size: 1.2rem;
+}
+
+/* Set the width of an element to 20 rems */
+.my-element {
+  width: 20rem;
+}
+
+/* %:  relative unit that are based on the size of the parent element.  */
+.my-element {
+  font-size: 120%;
+}
+
+/* Set the width of an element to 50% of the parent element */
+.my-element {
+  width: 50%;
+}
+
+/* USEFULNESS OF THE UNITS:  */
+/* all the units can be used for setting font sizes, margins, and padding */

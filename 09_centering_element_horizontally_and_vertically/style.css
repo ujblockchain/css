@@ -1,0 +1,34 @@
+/* using text align */
+.container {
+  text-align: center;
+}
+
+/* using margin */
+.contained {
+  margin: 0 auto;
+  width: 200px; /* Optional: Set a width to control the centered item's width */
+}
+
+/* using flexbox */
+.container_flexbox {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  /* set the height to for vertical alignment */
+  height: 100vh;
+}
+
+/* using grid */
+.container_grid {
+  display: grid;
+  /* The CSS place-items shorthand property sets both the align-items and justify-items properties. The first value is the align-items property value, the second the justify-items one. If the second value is not present, the first value is also used for it. */
+  place-items: center;
+  height: 100vh;
+}
+
+/* using absolute positioning  */
+.centered-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}

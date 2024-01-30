@@ -1,0 +1,28 @@
+/* Border Styles, Widths, and Colors */
+/* Set the border style, width, and color */
+.my-element {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ccc;
+}
+/* OR */
+.my-element {
+  border: 2px solid #ccc;
+}
+
+/* Border Radius: Create rounded corners on an element's border.  */
+.my-element {
+  border-radius: 5px;
+}
+
+/* Box Shadow: Create a shadow effect around an element's frame.  */
+/* You can use the BOX-SHADOW property to set the horizontal and vertical offset of the shadow, the blur radius, the spread radius, and the color of the shadow. */
+.my-element {
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+/* Text shadows: Create a shadow effect around text   */
+/* You can use the TEXT-SHADOW property to set the horizontal and vertical offset of the shadow, the blur radius, and the color of the shadow. */
+.my-element {
+  text-shadow: 2px 2px 2px #ccc;
+}

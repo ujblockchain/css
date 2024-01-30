@@ -1,0 +1,14 @@
+/* Float: allows you to position an element to the left or right of its containing block, while letting the text and inline elements wrap around it. */
+
+/* Float an element to the left */
+.my-element {
+  float: left; /* left, right, none, inherit (get the value from the parent */
+}
+
+/* check example in the html page */
+
+/* Clear: allows you to control the behavior of floating elements. */
+/* When an element is floated, it can cause other elements to overlap or wrap around it. The clear property is used to prevent this by clearing the float and forcing the element to start on a new line. */
+/* Ensuring that no floating element is allowed to the (right, left, inherit etc */
+
+/* check example in the html page */

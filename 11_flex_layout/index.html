@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        /* all the value that justify-content can take */
+        /* flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe */
+
+        justify-content: start;
+        /* all the value that align-items can take */
+        /* stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe */
+
+        align-items: start;
+        /* all the value that flex-direction can take */
+        /* row | row-reverse | column | column-reverse */
+        flex-direction: column-reverse;
+      }
+
+      .item {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        flex: 1;
+      }
+      .item2 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        flex: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item2">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+  </body>
+</html>

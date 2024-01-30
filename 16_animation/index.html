@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      /* CSS animations make it possible to animate transitions from one CSS style configuration to another. 
+        Animations consist of two components, 
+            1. a style describing the CSS animation and 
+            2. a set of keyframes that indicate the start and end states of the 
+                animation’s style, as well as possible intermediate waypoints.
+        */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .animated-button {
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .animated-button:hover {
+        animation: bounce 0.5s infinite;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+
+        /* sett all these after defining the animation */
+        animation-name: example;
+        animation-duration: 4s;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes example {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: yellow;
+        }
+      }
+      @keyframes example {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animation</h1>
+    <button class="animated-button">Click Me</button>
+    <div>this is the div</div>
+  </body>
+</html>

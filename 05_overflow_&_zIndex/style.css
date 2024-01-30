@@ -1,0 +1,27 @@
+.container {
+    background-color: #bbb;
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+    /* we also have overflow-y and overflow-x */
+}
+
+/* z-index */
+.box1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 1;
+}
+.box2 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    z-index: 2;
+  }

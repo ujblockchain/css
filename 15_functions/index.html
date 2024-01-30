@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+    <style>
+      /* calc():  perform calculations to determine CSS property values. */
+      div {
+        width: calc(100% - 50px);
+      }
+
+      /* rgba():  defines a color using Red Green Blue 
+            (RGB) values but also adds an Alpha channel value for transparency.  */
+      div {
+        background-color: rgba(255, 0, 0, 0.3);
+      }
+
+      /* hsl(): defines a color using Hue Saturation Lightness (HSL)  */
+      div {
+        background-color: hsl(120, 100%, 50%);
+      }
+
+      /* url(): used to specify the location of a resource, such as an image or a font file */
+      .bg-image {
+        background-image: url("path-to-image.jpg");
+      }
+
+      /* var(): allow you to use a custom 
+            property when a value is expected.   */
+      :root {
+        --main-color: #3498db;
+      }
+
+      .link {
+        color: var(--main-color);
+      }
+
+      /* linear-gradient(): to create gradient backgrounds  */
+      .gradient-background {
+        background: linear-gradient(to right, red, blue);
+      }
+
+      /* radial-gradient-background(): to create gradient backgrounds. Similar to linear but just that it create gradient background.  */
+      .radial-gradient-background {
+        background: radial-gradient(circle, red, yellow, green);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Functions</h1>
+    <p>
+      Functions are a way to group a set of statements together to perform a
+      specific task. If different parts of a script repeat the same task, you
+      can reuse the function (rather than repeating the same set of statements).
+    </p>
+  </body>
+</html>

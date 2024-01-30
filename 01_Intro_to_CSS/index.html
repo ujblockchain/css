@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to CSS</title>
+  </head>
+  <body>
+    <!-- 
+        WHAT IS CSS?
+        CSS stands for Cascading Style Sheets, and it is a language used to describe the presentation of HTML documents. CSS describes how HTML elements should be displayed. 
+     -->
+
+    <!-- 
+        HOW TO INCLUDE CSS IN AN HTML DOCUMENT?
+
+        1. Inline CSS
+        2. Internal CSS
+        3. External CSS
+      -->
+    <!-- Inline CSS -->
+    <h1 style="color: red">This is a heading</h1>
+
+    <!-- Internal CSS -->
+    <style>
+      h2 {
+        color: blue;
+      }
+    </style>
+    <h2>This is a heading</h2>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <h3>This is a heading</h3>
+
+    <!-- CSS SYNTAX AND SELECTORS -->
+    <!-- CSS uses a simple syntax to define rules that apply to HTML elements. A CSS rule consists of a selector and one or more declarations. Here's an example: -->
+
+    <!-- selector {property: value} -->
+    <!-- 
+            h1 {
+                color: red;
+                font-size: 24px;
+            }
+
+            h1 is the selector, and color and font-size are declarations. The color and font-size declarations are separated by a semicolon.
+         -->
+
+    <!-- TYPES OF SELECTORS  -->
+    <!-- 
+                General or all elements selectors
+            
+                1. Element Selector
+                2. Class Selector
+                3. ID Selector
+                4. Universal Selector
+                5. Group Selector
+                6. Descendant Selector
+                7. Child Selector
+                8. Adjacent Sibling Selector
+                9. General Sibling Selector
+            -->
+    <!-- all elements -->
+    <style>
+      * {
+        color: red;
+      }
+    </style>
+    <!-- Element Selector -->
+    <style>
+      h1 {
+        color: red;
+      }
+    </style>
+    <h1>This is a heading</h1>
+
+    <!-- Class Selector -->
+    <style>
+      .red-text {
+        color: red;
+      }
+    </style>
+    <h1 class="red-text">This is a heading</h1>
+
+    <!-- ID Selector -->
+    <style>
+      #red-text {
+        color: red;
+      }
+    </style>
+    <h1 id="red-text">This is a heading</h1>
+
+    <!-- Universal Selector -->
+    <style>
+      * {
+        color: red;
+      }
+    </style>
+    <h1>This is a heading</h1>
+
+    <!-- Group Selector -->
+    <style>
+      h1,
+      h2 {
+        color: red;
+      }
+    </style>
+    <h1>This is a heading</h1>
+    <h2>This is a heading</h2>
+
+    <!-- Descendant Selector -->
+    <style>
+      div p {
+        color: red;
+      }
+    </style>
+    <div>
+      <p>This is a paragraph.</p>
+    </div>
+
+    <!-- Child Selector -->
+    <style>
+      div > p {
+        color: red;
+      }
+    </style>
+    <div>
+      <p>This is a paragraph.</p>
+    </div>
+
+    <!-- Adjacent Sibling Selector -->
+    <style>
+      div + p {
+        color: red;
+      }
+    </style>
+    <div>
+      <p>This is a paragraph.</p>
+    </div>
+    <p>This is a paragraph.</p>
+
+    <!-- General Sibling Selector -->
+    <style>
+      div ~ p {
+        color: red;
+      }
+    </style>
+    <div>
+      <p>This is a paragraph.</p>
+    </div>
+    <p>This is a paragraph.</p>
+    <p>This is a paragraph.</p>
+
+    <!-- Attribute selectors (e.g. [type="text"]) -->
+    <style>
+      input[type="text"] {
+        color: red;
+      }
+    </style>
+
+    <!-- Pseudo-classes  (e.g. :hover, :first-child) -->
+    <style>
+      a:hover {
+        color: red;
+      }
+      /* first, last and nth child */
+      p:first-child {
+        color: red;
+      }
+      p:last-child {
+        color: red;
+      }
+      p:nth-child(2) {
+        color: red;
+      }
+    </style>
+
+    <!-- pseudo-elements (e.g. ::before, ::after)  -->
+    <style>
+      p::first-line {
+        color: red;
+      }
+      p::first-letter {
+        color: red;
+      }
+      /* before */
+      p::before {
+        content: "Read this: ";
+      }
+      /* after */
+      p::after {
+        content: " - end of story";
+      }
+    </style>
+  </body>
+</html>

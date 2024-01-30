@@ -1,0 +1,13 @@
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+.box_min_max {
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    min-height: 100px;    /* min-width */
+    max-height: 300px;    /* max-width */
+    overflow: scroll;
+}

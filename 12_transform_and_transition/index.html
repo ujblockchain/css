@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Property</title>
+    <style>
+      .item {
+        margin-top: 40px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+
+        position: absolute;
+        top: 104px;
+        left: 70px;
+
+        /* transform: rotate(45deg);  rotate the element 45 degrees clockwise. */
+
+        /* transform: scale(2, 3);  enlarge on the x and y axis */
+
+        transform: skew(
+          20deg,
+          10deg
+        ); /* skews an element along the X and Y axis. */
+
+        transform: translate(100px, 100px); /* move on the hor and ver */
+
+        /* NB: you can combine multiple transform properties */
+        /*  transform: rotate(45deg) scale(2, 3) skew(20deg, 10deg); */
+      }
+
+      /* TRANSITION: define the transition between two states of an element. */
+
+      .item2 {
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: width 2s;
+        /* transition: width 2s, height 2s; */
+      }
+
+      .item2:hover {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item">item 1</div>
+    <div class="item2">item 2</div>
+  </body>
+</html>
