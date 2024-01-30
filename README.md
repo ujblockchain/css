@@ -1,6 +1,6 @@
 ![image info](https://blockchain.uj.ac.za/static/images/main-logo.png)
 
-# SARChI - Complete HTML Tutorial for Beginner
+# SARChI - Complete CSS Tutorial for Beginner
 South Africa-Switzerland Bilateral Research Chair in Blockchain Technology aims to explore blockchain integrations with real-world applications and development in Agric-food.
 
 ## Structure
